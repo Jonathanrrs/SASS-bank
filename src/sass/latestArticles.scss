@@ -1,0 +1,21 @@
+.latestArticles {
+    background-color: var(--lightGray);
+    &__grid {
+        display: grid;
+        row-gap: 2em; /* para espaciado */
+    }
+    &__item {
+        border: 1px solid green;
+        border-radius: .5em;
+        overflow: hidden; /* para que la punta de la imagen no se sobresalga */
+        background-color: var(--white);
+        &-content {
+            padding: 2em;
+        }
+        img {
+            width: 100%;
+            object-fit: cover; /* esto para que no se estire la imagen */
+            display: block;
+        }
+    }
+}
