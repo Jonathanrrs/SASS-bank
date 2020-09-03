@@ -1,5 +1,12 @@
 .latestArticles {
     background-color: var(--lightGray);
+    padding: 5em 0;
+    .title__h1 {
+        text-align: center;
+    }
+    .title__h3 {
+        text-align: left;
+    }
     &__grid {
         display: grid;
         row-gap: 2em; /* para espaciado */
@@ -10,7 +17,15 @@
         overflow: hidden; /* para que la punta de la imagen no se sobresalga */
         background-color: var(--white);
         &-content {
-            padding: 2em;
+            padding: 1.8em;
+        }
+        .copy {
+            color: var(--grayBlue);
+        }
+        small {
+            color: var(--grayBlue);
+            margin-bottom: 1em;
+            display: block; /* para que margin le funcione */
         }
         img {
             width: 100%;
