@@ -11,9 +11,9 @@
     a {
         text-decoration: none;
         color: var(--grayBlue);
-        padding: 0.8em;
+        padding: 0 .8em;
     }
-    __item {
+    &__item {
         display: flex;
         align-items: center;
     }
@@ -49,15 +49,15 @@
                     font-size: 1.1em;
                     display: block;
                     text-align: center;
+                    flex: 1;
                 }
             }
         }
     }
-    @media screen and(min-width: 1024px) {
+    @media screen and (min-width: 1024px) {
         display: flex;
         &__button {
             display: none;
         }
     }
-    
 }
