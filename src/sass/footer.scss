@@ -3,7 +3,7 @@
     color: var(--white);
     padding: 2em 0;
     text-align: center;
-    svg {
+    &__logo {
         display: block;
         margin: auto;
         margin-bottom: 2em;
@@ -29,7 +29,7 @@
     @media screen and(min-width: 1024px) {
         .wrapper {
             display: grid;
-            column-gap: 1em;
+            column-gap: 7em;
             grid-template-columns: 200px 1fr 400px;
             grid-template-areas: "logo links button" 
             "social links copyright";
@@ -42,15 +42,18 @@
         }
         &__logo {
             grid-area: logo;
+            margin: initial
         }
         &__social {
             grid-area: social;
         }
         &__button {
             grid-area: button;
+            text-align: right;
         }
         &__copyright {
             grid-area: copyright;
+            text-align: right;
         }
     }
 }

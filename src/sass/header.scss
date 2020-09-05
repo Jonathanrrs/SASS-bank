@@ -1,7 +1,8 @@
 .header {
-    display: flex; /* para que aline las cosas unas al lado de las otras */
+    // display: flex; /* para que aline las cosas unas al lado de las otras */
     padding: 1em 0;
     justify-content: space-between; /* los elementos estén uno al extremo del otro */
+    position: relative;
     &__logo {
         align-self: center;
     }
